@@ -1,0 +1,5 @@
+F:\Niladri\workspaces\gitRepos\dotNetSpace\org.niladri.net\org.niladri.net.dal\bin\Debug\org.niladri.net.dal.dll
+F:\Niladri\workspaces\gitRepos\dotNetSpace\org.niladri.net\org.niladri.net.dal\bin\Debug\org.niladri.net.dal.pdb
+F:\Niladri\workspaces\gitRepos\dotNetSpace\org.niladri.net\org.niladri.net.dal\obj\Debug\org.niladri.net.dal.dll
+F:\Niladri\workspaces\gitRepos\dotNetSpace\org.niladri.net\org.niladri.net.dal\obj\Debug\org.niladri.net.dal.pdb
+F:\Niladri\workspaces\gitRepos\dotNetSpace\org.niladri.net\org.niladri.net.dal\obj\Debug\org.niladri.net.dal.csprojResolveAssemblyReference.cache
