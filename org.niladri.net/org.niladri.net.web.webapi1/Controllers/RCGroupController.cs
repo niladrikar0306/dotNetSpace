@@ -12,34 +12,29 @@ namespace org.niladri.net.web.webapi1.Controllers
 {
     public class RCGroupController : ApiController
     {
-        int i = 0;  
+        int i = 0;
         // GET: api/RCGroup
-        public IEnumerable<RCGroupConfig> Get()
+        // we can use [FromUri] to get complex query parameter
+        // all these input parameters can be resolved from path or query depending upon the situation
+        // this is a little strange to see .net as unopinionated 
+        [ActionName("index")]
+        public IEnumerable<RCGroupConfig> Get(String id = null, String loc=null)
         {
             Console.WriteLine("value of state int i is => " + i++);
             return new RCDataService().GetAllDQGroups();
             
         }
 
-        // GET: api/RCGroup/5
-        public string Get(int id)
+        [HttpGet]
+        [ActionName("getaction")]
+        public IEnumerable<RCGroupConfig> CustomGet()
         {
-            return "value";
+            Console.WriteLine("value of state int i is => " + i++);
+            return new RCDataService().GetAllDQGroups();
+
         }
 
-        // POST: api/RCGroup
-        public void Post([FromBody]string value)
-        {
-        }
 
-        // PUT: api/RCGroup/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/RCGroup/5
-        public void Delete(int id)
-        {
-        }
+        
     }
 }
